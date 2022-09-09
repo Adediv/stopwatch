@@ -31,10 +31,12 @@
     </style>
 </head>
 <body>
-   <div class="text-center">
-        <input disabled class="col-2 rounded-pill border-0 mx-2" type="text" placeholder="00" id="myHour">
-        <input disabled class="col-2 rounded-pill border-0 mx-2" type="text" placeholder="00" id="myMin">
-        <input disabled class="col-2 rounded-pill border-0 mx-2" type="text" placeholder="00" id="mySecs"><br>
+   <div class="text-center col-sm-11 col-md-11 col-lg-12">
+        <div class="">
+            <input disabled class="col-2 rounded-pill border-0 mx-2" type="text" placeholder="00" id="myHour">
+            <input disabled class="col-2 rounded-pill border-0 mx-2" type="text" placeholder="00" id="myMin">
+            <input disabled class="col-2 rounded-pill border-0 mx-2" type="text" placeholder="00" id="mySecs"><br>
+        </div>
         <button class="btn btn-outline-dark text-light fw-bold mt-4 rounded-pill fs-1 fw-bold" onclick="stopWatch()"> START</button>
         <button class="btn btn-outline-dark text-light fw-bold mt-4 rounded-pill fs-1 fw-bold" onclick="stop()"> STOP</button>
         <button class="btn btn-outline-dark text-light fw-bold mt-4 rounded-pill fs-1 fw-bold" onclick="reset()"> RESET</button>

@@ -21,3 +21,9 @@ const stop =()=>{
     myMin.innerText = myMin
     mySecs.innerText = my
 }
+
+const reset =()=>{
+    myHour.value = ""
+    myMin.value = ""
+    mySecs.value = ""
+}
