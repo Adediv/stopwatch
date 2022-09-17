@@ -13,9 +13,15 @@
             /* background-repeat: no-repeat;
             background-size: cover;
             background-position: center; */
-            background-color: black;
+            background-color:black;
             padding-top: 10%;
 
+        }
+        .btn{
+            box-shadow: 1px 1px 17px 10px rgb(250, 23, 174) inset;
+            height: 100px !important;
+            width: 150px !important;
+            color: rgb(160, 159, 159);
         }
         .col-2{
             height: 130px;
@@ -23,23 +29,26 @@
             text-align: center;
             font-size: 90px;
             color: white;
+            background-image: linear-gradient(rgb(245, 20, 69),rgb(250, 23, 174) , rgb(204, 0, 255));
             
             
 
         }
+
         
     </style>
 </head>
 <body>
    <div class="text-center col-sm-11 col-md-11 col-lg-12">
+    <h1 class="mb-4 text-light">STOPWATCH </h1>
         <div class="">
             <input disabled class="col-2 rounded-pill border-0 mx-2" type="text" placeholder="00" id="myHour">
             <input disabled class="col-2 rounded-pill border-0 mx-2" type="text" placeholder="00" id="myMin">
             <input disabled class="col-2 rounded-pill border-0 mx-2" type="text" placeholder="00" id="mySecs"><br>
         </div>
-        <button class="btn btn-outline-dark text-light fw-bold mt-4 rounded-pill fs-1 fw-bold" onclick="stopWatch()"> START</button>
-        <button class="btn btn-outline-dark text-light fw-bold mt-4 rounded-pill fs-1 fw-bold" onclick="stop()"> STOP</button>
-        <button class="btn btn-outline-dark text-light fw-bold mt-4 rounded-pill fs-1 fw-bold" onclick="reset()"> RESET</button>
+        <button class="btn border-0  fw-bold mt-4 rounded-pill fs-2 fw-bold" onclick="stopWatch()"> START</button>
+        <button class="btn border-0  fw-bold mt-4 rounded-pill fs-2 fw-bold" onclick="stop()"> STOP</button>
+        <button class="btn border-0  fw-bold mt-4 rounded-pill fs-2 fw-bold" onclick="reset()"> RESET</button>
    </div>
   <script src="stopwatch.js"></script>  
 </body>

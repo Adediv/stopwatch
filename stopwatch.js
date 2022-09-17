@@ -5,7 +5,7 @@ const stopWatch = () =>{
     let countedSec = mySecs.value;
     countedSec++;
     mySecs.value = countedSec;
-    setTimeout(stopWatch, 10)
+    myTimeout = setTimeout(stopWatch, 10)
     if(mySecs.value == 100){
         mySecs.value = 0;
         myMin.value++;
@@ -17,9 +17,7 @@ const stopWatch = () =>{
 }
 
 const stop =()=>{
-    myHour.innerText = myHour
-    myMin.innerText = myMin
-    mySecs.innerText = my
+    clearTimeout(myTimeout);
 }
 
 const reset =()=>{
